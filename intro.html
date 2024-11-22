@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link href="css.css" rel="stylesheet" />
+  </head>
+  <style>
+    nav {
+      position: relative;
+      z-index: 1;
+    }
+
+    .wrapper-gradient-text {
+      position: relative;
+      top: -50px;
+      left: -0px;
+      z-index: 0;
+    }
+
+    /*body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f4f8;
+}*/
+
+    .wrapper-gradient-text {
+      font-size: 3.3rem;
+      font-weight: bold;
+      display: flex;
+      color: transparent;
+      /*perspective: 270px;*/
+      perspective: 300px;
+    }
+
+    .text-layer {
+      position: relative;
+      transform: rotateX(-30deg) translateZ(70px);
+      background: linear-gradient(
+        109.6deg,
+        rgb(231, 223, 201) 11.2%,
+        rgb(210, 211, 142) 42%,
+        rgba(226, 233, 202, 0.877) 71.5%,
+        rgb(255, 255, 255) 100.2%
+      );
+      text-shadow: 0px 15px 0px rgb(255, 255, 255);
+
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+
+      animation: shadowDrip 3s infinite alternate ease-in-out;
+    }
+
+    @keyframes melt {
+      0% {
+        transform: scaleY(1) translateY(0);
+      }
+      100% {
+        transform: scaleY(1.1) translateY(5px);
+      }
+    }
+
+    @keyframes shadowDrip {
+      0% {
+        text-shadow: 0px 5px 0px rgba(210, 226, 167, 0.753);
+      }
+      100% {
+        text-shadow: 0px 20px 30px rgba(255, 255, 255, 0.966),
+          0px 30px 40px rgba(255, 255, 255, 0.822),
+          0px 70px 5px rgba(255, 255, 255, 0.781);
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="intro.html">Intro</a></li>
+          <li>
+            <a href="profile.html">Profile</a>
+            <ul>
+              <li><a href="#">Genesis</a></li>
+              <li><a href="#">Beginining</a></li>
+              <li><a href="#">Ryerson</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="architecture.html">Architecture</a>
+            <ul>
+              <li><a href="#">Commercial</a></li>
+              <li><a href="#">Residential</a></li>
+              <li><a href="#">Conceptual</a></li>
+              <li>
+                <a href="#">What You Get</a>
+                <ul>
+                  <li><a href="#">My Prices</a></li>
+                  <li><a href="#">What They're Saying</a></li>
+                  <li><a href="#">What I Do</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="perspective.html">Distraction</a></li>
+          <li><a href="#">Contact Me</a></li>
+          <li><a href="#">Inspiration</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="intro">
+        <div><p>So, I'm going to tell you about</p></div>
+        <div class="wrapper-gradient-text">
+          <span class="text-layer">M</span>
+          <span class="text-layer">y</span>
+          <span class="text-layer">s</span>
+          <span class="text-layer">e</span>
+          <span class="text-layer">l</span>
+          <span class="text-layer">f</span>
+        </div>
+
+        <div>
+          <p>
+            Let’s face it------if you want to get to know someone<br />
+            you may as well genuinely go to the source<br />
+            and not hover kind of on the edge.<br />
+            Well sit back, and relax because I'll give you a glimpse!<br /><br />
+          </p>
+
+          <p><span>Thanks for sticking around!</span></p>
+
+          <p>
+            <a
+              href="perspective.html"
+              style="text-decoration: none; text-align: center"
+              >A Distraction -- Click Here</a
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
