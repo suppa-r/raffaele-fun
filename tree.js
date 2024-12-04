@@ -7,13 +7,15 @@ class Tree {
 		this.C = document.querySelector(qs);
 		this.c = this.C?.getContext("2d");
 		this.S = window.devicePixelRatio;
-		this.W = 800;
-		this.H = 600;
+		/*this.W = 800;
+		this.H = 800;*/
+		this.W= 800;
+		this.H=800;
 		this.branches = [];
 		this.darkTheme = false;
 		this.debug = false;
 		this.decaying = false;
-		this.floorY = 585;
+		this.floorY = 685;
 		this.fruit = [];
 		this.gravity = 0.098;
 		this.loopDelay = 500;
@@ -75,8 +77,8 @@ class Tree {
 		const { c, W, H, debug, branches, fruit } = this;
 
 		c.clearRect(0,0,W,H);
-
-		const lightness = this.darkTheme ? 90 : 10;
+		/*const lightness = this.darkTheme ? 90 : 10;*/
+		const lightness = this.darkTheme ? 20 : 50;
 		const foreground = `hsl(223,10%,${lightness}%)`;
 		c.fillStyle = foreground;
 		c.strokeStyle = foreground;
@@ -250,7 +252,9 @@ class Tree {
 		C.width = W * S;
 		C.height = H * S;
 		C.style.width = "auto";
-		C.style.height = "100%";
+		/*C.style.height = "100%";*/
+		C.style.height = "40%";
+		
 		c.scale(S,S);
 
 		// set unchanging styles
