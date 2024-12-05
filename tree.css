@@ -1,26 +1,4 @@
 
-
-- maxLevels = 10; // 🕹️ play with this value
-mixin node(level)
-  if level + 1 < maxLevels
-    - var childLevel = level + 1;
-    .node(style='--level: ' + level)
-      +node(childLevel)
-    .node(style='--level: ' + level)
-      +node(childLevel)
-- var i = 0;
-while i < 4
-  - i++;
-  .tree(style='--max-level: ' + maxLevels + ';--index: ' + (i - 1))
-    .node(style="--level: 0")
-      +node(1)
-
-
-
-
-
-
-
 @layer tokens {
     :root {
       --color-primary: #ee75d2;
@@ -31,20 +9,20 @@ while i < 4
     }
   }
   
-  @layer demo {
+ /* @layer demo {
     @property --angle {
       syntax: "<angle>";
       initial-value: 16deg;
       inherits: true;
-    }
+    }*/
   
     .tree {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      justify-content:start;
+      align-items: start;
       inset: 0;
-      position: absolute;
+      position: relative;
       opacity: calc(var(--count) - var(--index));
   
       &:nth-child(2) {
@@ -204,14 +182,14 @@ while i < 4
         --angle: 16deg;
       }
     }
-  }
+  
   
   @layer global {
     body {
-      width: 100vw;
-      height: 100vh;
+      width: 60vw;
+      height: 60vh;
       display: grid;
-      place-items: center;
+      place-items:left;
       background: conic-gradient(
         var(--color-surface),
         color-mix(in oklch, var(--color-surface), black 80%),
@@ -226,11 +204,12 @@ while i < 4
     * {
       box-sizing: border-box;
     }
-  }
+
   
   center at bottom
   a.labs-follow-me {
     left: 2rem;
+   
     right: 2rem;
     bottom: 1rem;
     top: unset;
@@ -238,5 +217,5 @@ while i < 4
     backdrop-filter: blur(1rem);
   }
   
-  
+  }
  
