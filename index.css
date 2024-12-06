@@ -258,6 +258,7 @@ padding: 3em;
 
 
 .col-2{
+  text-wrap: pretty;
  text-align: left;
  color: var(--clr-dark);
  grid-column: 2;
