@@ -258,7 +258,7 @@ padding: 3em;
 
 
 .col-2{
- text-align: center;
+ text-align: left;
  color: var(--clr-dark);
  grid-column: 2;
  margin-inline:0 auto;
