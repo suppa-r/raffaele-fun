@@ -59,7 +59,7 @@
       transform: scaleY(0);
       translate: 0 var(--tree-position-y-offset, 0);
   
-      > .node {
+      .node {
         --y: -100%;
         translate: 0 var(--y);
         transform-origin: bottom;
@@ -210,11 +210,11 @@
   a.labs-follow-me {
     /*left: 2rem;*/
     left:0;
-   right:0;
+   right:7rem;
     /*right: 2rem;*/
     bottom: 1rem;
     top: unset;
-    text-align: center;
+    text-align:start;
     backdrop-filter: blur(1rem);
   }
   

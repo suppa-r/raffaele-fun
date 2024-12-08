@@ -729,6 +729,8 @@ nav ul li a:hover::after{
             font-size: var(--fs-400);
           max-width: 50ch;
          text-wrap:balance;
+         padding-inline: 0 auto;
+         margin-inline: 0 auto;
            } 
 
            .tree{
@@ -737,12 +739,18 @@ nav ul li a:hover::after{
 
            .tree h3{
             color: hsl( var(--clr-white) );
-            max-width: 50ch;
-            margin-inline:5em auto;
-            padding-left:7rem auto;
+            max-width: 60ch;
+            margin-inline:0 auto;
+            padding-inline:0 auto;
             text-align:left;
-          font-size: var(--fs-500);
+            font-size: var(--fs-500);
             text-wrap:balance;
+           }
+
+           .tree canvas{
+             max-width: 70ch;
+            margin-inline:0 auto;
+            padding-inline:0 auto;
            }
                   
     }

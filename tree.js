@@ -64,9 +64,13 @@ class Tree {
 			growthSpeed: 0.04,
 			hadBranches: false,
 			progress: 0,
-			x1: 400,
+			/*x1: 400,
 			y1: 680,
 			x2: 400,
+			y2: 560*/
+			x1: 350,
+			y1: 680,
+			x2: 350,
 			y2: 560
 		};
 	}
