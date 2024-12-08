@@ -9,12 +9,12 @@
     }
   }
   
- /* @layer demo {
+  @layer demo {
     @property --angle {
-      syntax: "<angle>";
+      syntax: 180deg;
       initial-value: 16deg;
       inherits: true;
-    }*/
+    }
   
     .tree {
       display: flex;
@@ -189,7 +189,7 @@
       width: 60vw;
       height: 60vh;
       display: grid;
-      place-items:left;
+      place-items:start;
       background: conic-gradient(
         var(--color-surface),
         color-mix(in oklch, var(--color-surface), black 80%),
@@ -208,9 +208,10 @@
   
   center at bottom
   a.labs-follow-me {
-    left: 2rem;
-   
-    right: 2rem;
+    /*left: 2rem;*/
+    left:0;
+   right:0;
+    /*right: 2rem;*/
     bottom: 1rem;
     top: unset;
     text-align: center;
@@ -218,4 +219,4 @@
   }
   
   }
- 
+}
