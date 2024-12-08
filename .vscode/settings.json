@@ -7,6 +7,6 @@
   "files.autoSave": "onFocusChange", // optional but recommended
   "vs-code-prettier-eslint.prettierLast": false,
   "[css]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "vscode.css-language-features"
   } // set as "true" to run 'prettier' last not first
 }
