@@ -83,42 +83,83 @@
   }
 }
 
-
-/* ------------------- */
-/* Reset               */
-/* ------------------- */
-
-/* https://piccalil.li/blog/a-modern-css-reset/ */
-
-/* Box sizing */
+/* ---------------- */
+/* ------Reset------*/
+/* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Reset margins */
+/* Remove default margin */
 body,
 h1,
 h2,
 h3,
 h4,
-h5,
 p,
 figure,
-picture {
+blockquote,
+dl,
+dd {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  font-weight: 400;
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
 }
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 
 
 /* set up the body */
@@ -647,7 +688,16 @@ nav ul ul ul {
 }
 
 .tree h3 {
-  color: hsl(var(--clr-light));
+  width: 65ch;
+  margin-inline: 0 auto;
+  padding-inline: 0 auto;
+  color: hsl(var(--clr-white));
+}
+
+.canvas {
+  width: 65ch;
+  margin-inline: 0 auto;
+  padding-inline: 0 auto;
 }
 
 .col-3 {
@@ -670,7 +720,6 @@ nav ul ul ul {
     place-items: center;
     padding-inline: 0 auto;
     text-align: center;
-    /*column-gap: var(--container-gap, 0rem);*/
     grid-template-columns: minmax(0, 1fr) repeat(2, minmax(0, 55em)) minmax(0, 1fr);
     gap: 0;
     min-height: 100svh;
@@ -681,17 +730,12 @@ nav ul ul ul {
     padding-bottom: max(4rem, 15vh);
     align-items: start;
     min-height: 100svh;
-    /*font-size: var(--fs-400);*/
   }
 
   .col {
     width: fit-content;
     text-align: center;
     text-wrap: balance;
-
-
-    /*margin-top:3rem;
-           padding: 2.5em;*/
   }
 
   .col p span {
@@ -730,18 +774,17 @@ nav ul ul ul {
 
   .tree h3 {
     padding-top: 3em;
-
     margin-inline: 0 auto;
-
     padding-inline: 0 auto;
     font-size: var(--fs-500);
-    color: hsl(var(--clr-light));
+    color: hsl(var(--clr-white));
     max-width: 45ch;
     text-wrap: balance;
   }
 
   .tree canvas {
     padding-bottom: 4em;
+    margin-inline: 0 auto;
     padding-inline: 0 auto;
     max-width: 55ch;
   }
@@ -753,79 +796,121 @@ nav ul ul ul {
   }
 
   .grid-container {
-    text-align: center;
-    /*column-gap: var(--container-gap, 2rem);*/
-    display: grid;
     grid-template-rows: 1fr;
+    place-items: center;
+    padding-inline: 0 auto;
+    margin-inline: 0 auto;
+    text-align: center;
+
+    gap: 0;
+    min-height: 100svh;
+    overflow: clip;
   }
 
   .grid-container--home {
-    padding-bottom: max(3rem, 10vh);
+    /*padding-bottom: max(4rem, 15vh);*/
     align-items: center;
   }
 
+
+
   .col {
-    width: fit-content;
+    font-size: var(--fs-200);
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
+    width: 60ch;
     text-align: center;
     text-wrap: balance;
+    margin-bottom: 4em;
+  }
 
+  .col img {
+    width: 25%;
+  }
 
-    /*margin-top:3rem;
-           padding: 2.5em;*/
+  .col p {
+    font-size: var(--fs-200);
+    width: 60ch;
   }
 
   .col p span {
+    width: 60ch;
+    font-size: var(--fs-300);
+  }
+
+  .col h3 {
+    width: 60ch;
+    font-size: var(--fs-300);
     color: hsl(var(--clr-light));
   }
 
+
+
   .col-1 {
     text-wrap: balance;
-    width: fit-content;
+    width: 60ch;
     margin-inline: 0 auto;
     padding-inline: 0 auto;
   }
 
-  .col-1 a {
-    color: hsl(var(--clr-dark));
-    max-width: 65ch;
-
-    margin-top: 3em;
-    line-height: 1.5;
-    padding: 5em;
+  .large-button {
+    margin-top: 4em;
+    color: hsl(var(--clr-white));
+    background: hsl(var(--clr-white) / .9);
+    position: relative;
+    z-index: 1;
+    display: inline-grid;
+    place-items: center;
+    margin: 3em;
+    padding: 3em;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    text-decoration: none;
   }
 
-  .col-1 a span {
+  .col-1 p {
+    margin: 4em;
+    font-size: var(--fs-300);
+    color: hsl(var(--clr-dark));
+  }
+
+  .col-1 p a {
+    font-size: var(--fs-300);
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
+  }
+
+  .col-1 p a span {
+    text-align: center;
     color: hsl(var(--clr-light));
   }
 
   .col-2 {
-    font-size: var(--fs-400);
-    max-width: 50ch;
-    text-wrap: balance;
-    padding-inline: 0 auto;
+    padding-top: 5em;
     margin-inline: 0 auto;
-  }
 
-  .tree {
-    padding-bottom: 7em;
+    padding-inline: 0 auto;
+    font-size: var(--fs-400);
+    max-width: 60ch;
+    text-wrap: balance;
   }
 
   .tree h3 {
-    color: hsl(var(--clr-white));
-    max-width: 60ch;
+    padding-top: 3em;
     margin-inline: 0 auto;
     padding-inline: 0 auto;
-    text-align: left;
     font-size: var(--fs-500);
+    color: hsl(var(--clr-white));
+    max-width: 45ch;
     text-wrap: balance;
   }
 
   .tree canvas {
-    max-width: 70ch;
+    padding-bottom: 4em;
     margin-inline: 0 auto;
     padding-inline: 0 auto;
+    max-width: 55ch;
   }
-
 }
 
 
