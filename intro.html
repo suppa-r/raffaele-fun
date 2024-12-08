@@ -26,12 +26,16 @@
     font-size: 3.0rem;
     font-weight: bold;
     /*transform: rotateX(-30deg) translateZ(70px);*/
-    transform: rotateX(-30deg) translateZ(50px);
+    transform: rotateX(-30deg) translateZ(70px);
     background: linear-gradient(109.6deg,
-        hsl(195, 100%, 40%) 11.2%,
+        /*hsl(195, 100%, 40%) 11.2%,
         hsl(195, 100%, 40%) 42%,
         hsl(195, 100%, 40%) 42%,
-        rgb(255, 255, 255) 100.2%);
+        rgb(255, 255, 255) 100.2%);*/
+        hsl(195, 100%, 40%),
+        hsl(195, 100%, 40%),
+        hsl(195, 100%, 40%),
+        rgb(255, 255, 255));
     text-shadow: 0px 15px 0px rgb(36, 30, 30);
 
     -webkit-background-clip: text;
@@ -44,17 +48,17 @@
 
   @keyframes melt {
     0% {
-      transform: scaleY(1) translateY(0);
+      transform: scaleY(1) translateY(5px);
     }
 
-    100% {
-      transform: scaleY(1.1) translateY(5px);
+    0% {
+      transform: scaleY(1.1) translateY(10px);
     }
   }
 
   @keyframes shadowDrip {
     0% {
-      text-shadow: 0px 5px 0px rgba(210, 226, 167, 0.753);
+      text-shadow: 0px 5px 0px rgba(167, 197, 226, 0.993);
     }
 
     100% {
@@ -86,10 +90,10 @@
         <span>Myself</span>
         <br>
         Let’s face it------if you want to get to know someone<br> you may as well genuinely go to
-        the source<br> and not hover kind of on the edge. The view there is not so good.<br> Well sit back, and relax
+        the source<br> and not hover kind of on the edge.<br> The view there is not so good. <br>I will quarantee you that with all your Money Back!<br><br> Sit back now, and relax
         because I'll give you a <em>glimpse!</em><br>
 
-            <span> enjoy the stay!</span>
+        <span> enjoy the stay!</span>
       </p>
     </div>
 
@@ -120,13 +124,10 @@
 
     <div class="tree" style="margin-right:1.5rem;">
       <h3>The Fruitful Tree in the Garden I stole, and hacked, like an artist.<br> I walked out of the Art Gallary
-        of Ontario with this! Enjoy for now. The Gallary sent out a warrant.
+        of Ontario with this!<br><br> Enjoy for now.<br> The Gallary sent out a warrant for my arrest.
       </h3>
-      <!--<canvas role="img"
-        aria-label="A tree growing until it bears fruit, dropping its fruit, shrinking, and repeating the cycle"
-        style="place-items:start;"></canvas>-->
-         <canvas role="img"
-        aria-label="A tree growing until it bears fruit, dropping its fruit, shrinking, and repeating the cycle" ></canvas>
+      <canvas role="img"
+        aria-label="A tree growing until it bears fruit, dropping its fruit, shrinking, and repeating the cycle"></canvas>
     </div>
   </main>
 </body>

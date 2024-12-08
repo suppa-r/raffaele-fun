@@ -578,14 +578,22 @@ nav ul li a:hover::after{
     
       .tree{
          margin-inline:0 auto;
-          padding:0 auto;
+          padding-inline:0 auto;
           text-align: center;
         }
         .tree h3{
           color:hsl( var(--clr-light));
         }
     
-    
+     .col-3{
+      text-align:left;
+      max-width: 60ch;
+      color: var(--clr-white);
+      grid-column: 2;
+      margin-inline:0 auto;
+      /*margin: 5em;
+      padding: 5em;*/
+        }
         
     
       @media(max-width:768px){
@@ -649,20 +657,23 @@ nav ul li a:hover::after{
            } 
 
            .tree{
-            width:fit-content;
-            margin-inline: 0 auto;
-            padding-inline: 0 auto;
-            margin-bottom:0rem;
+          
+            padding-bottom: 6em;
+     
+        
+           
+          
+          
 
            }
-    
+
            .tree h3{
-            max-width: 65ch;
-            margin-inline:3em;
-            padding-inline: 3em;
+            color: hsl( var(--clr-white) );
+            max-width: 40ch;
+            margin-inline:0em auto;
+            padding-left:7em auto;
             text-align:left;
-            color: hsl( var(--clr-light) );
-            font-size: var(--fs-500);
+          font-size: var(--fs-500);
             text-wrap:wrap;
            }
                   
