@@ -162,7 +162,7 @@ picture {
 
 .grid {
   display: grid;
-  gap: var(--gap, 1rem);
+  /*gap: var(--gap, 1rem);*/
 }
 
 .d-block {
@@ -178,7 +178,7 @@ picture {
   text-align: center;
   display: grid;
   place-items: center;
-  padding-inline: 1rem;
+  /*padding-inline: 1rem;*/
 }
 
 .grid-container * {
@@ -554,8 +554,7 @@ nav ul ul ul {
 @media (min-width: 45em) {
   .grid-container {
     text-align: center;
-    column-gap: var(--container-gap, 2rem);
-    grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(2rem, 1fr);
+    grid-template-columns: minmax(3rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(3rem, 1fr);
   }
 
   .grid-container--home {
@@ -567,8 +566,6 @@ nav ul ul ul {
     grid-column: 2;
     text-wrap: balance;
     text-align: center;
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
   }
 
   .col p span {
@@ -593,12 +590,13 @@ nav ul ul ul {
   }
 
   .col-1 {
+
     grid-column: 3;
     text-align: center;
     font-family: var(--ff-light--italic);
 
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+
+
   }
 
   .col-1 p a {
@@ -674,11 +672,10 @@ nav ul ul ul {
 }
 
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .grid-container {
     text-align: center;
-    column-gap: var(--container-gap, 0rem);
-    grid-template-columns: minmax(0rem, 1fr) repeat(2, minmax(0, 50rem)) minmax(0rem, 1fr);
+    grid-template-columns: minmax(0rem, 1fr) repeat(2, minmax(0, 25rem)) minmax(0rem, 1fr);
   }
 
   .grid-container--home {
@@ -687,7 +684,7 @@ nav ul ul ul {
   }
 
   .col {
-    margin-left: 2em;
+    margin: 4rem;
     grid-column: 2;
     text-wrap: balance;
     text-align: center;
@@ -733,28 +730,20 @@ nav ul ul ul {
   }
 
   .large-button::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    width: 80%;
-    height: 80%;
-    background: hsl(var(--clr-white) / .6);
-    border-radius: 50%;
-    opacity: 0;
-    transition: opacity 200ms linear, transform 750ms ease-in-out;
+    display: none;
   }
 
   .large-button:hover::after,
   .large-button:focus::after {
-    opacity: 1;
-    transform: scale(1.5);
+    display: none;
   }
 
   .col-1 {
+    margin: 4rem;
     grid-column: 3;
     text-align: center;
     font-family: var(--ff-light--italic);
-    margin-left: 2em;
+
     margin-inline: 0 auto;
     padding-inline: 0 auto;
   }
@@ -771,7 +760,7 @@ nav ul ul ul {
   .col-1 p a span {
     font-family: var(--ff-semibold--italic);
     color: hsl(var(--clr-light));
-    font-size: var(--fs-700);
+    font-size: var(--fs-600);
   }
 }
 
