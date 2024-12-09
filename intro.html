@@ -15,72 +15,72 @@
 
   <!-- Our custom CSS -->
   <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="normalize.css" />
   <title>Raffaele Suppa | Website</title>
   <script src="index.js" defer></script>
   <script type="text/javascript" src="app.js" defer></script>
   <script type="text/javascript" src="tree.js" defer></script>
 </head>
-<style>
-  .text-layer {
-    position: relative;
-    font-size: 3.0rem;
-    font-weight: bold;
-    margin-bottom: 20svh;
-    /*transform: rotateX(-30deg) translateZ(70px);*/
-    transform: rotateX(-30deg) translateZ(70px);
-    background: linear-gradient(109.6deg,
-        /*hsl(195, 100%, 40%) 11.2%,
-        hsl(195, 100%, 40%) 42%,
-        hsl(195, 100%, 40%) 42%,
-        rgb(255, 255, 255) 100.2%);*/
-        hsl(195, 100%, 30%),
-        hsl(195, 100%, 40%),
-        hsl(195, 100%, 30%),
-        hsl(195, 100%, 40%));
-    text-shadow: 0px 15px 0px rgb(36, 30, 30);
-
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-
-    animation: shadowDrip 3s infinite alternate ease-in-out;
-
-  }
-
-  @keyframes melt {
-    0% {
-      transform: scaleY(1) translateY(5px);
-    }
-
-    0% {
-      transform: scaleY(1.1) translateY(10px);
-    }
-  }
-
-  @keyframes shadowDrip {
-    0% {
-      text-shadow: 0px 5px 0px rgba(167, 197, 226, 0.993);
-    }
-
-    100% {
-      text-shadow: 0px 20px 30px rgba(255, 255, 255, 0.966),
-        0px 30px 40px rgba(255, 255, 255, 0.822),
-        0px 70px 5px rgba(255, 255, 255, 0.781);
-    }
-
-
-  }
-</style>
 
 <body class="home">
   <a class="skip-to-content" href="#main">Skip to content</a>
   <header class="primary-header flex">
     <div>
-      <img src="./images/logo.svg" alt="raffaele" class="logo" />
+      <img src="./images/logo.svg" alt="space tourism logo" class="logo">
     </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
+        aria-expanded="false">Menu</span></button>
   </header>
+  <style>
+    .text-layer {
+      position: relative;
+      font-size: 3.0rem;
+      font-weight: bold;
+      margin-bottom: 20svh;
+      /*transform: rotateX(-30deg) translateZ(70px);*/
+      transform: rotateX(-30deg) translateZ(70px);
+      background: linear-gradient(109.6deg,
+          /*hsl(195, 100%, 40%) 11.2%,
+          hsl(195, 100%, 40%) 42%,
+          hsl(195, 100%, 40%) 42%,
+          rgb(255, 255, 255) 100.2%);*/
+          hsl(195, 100%, 30%),
+          hsl(195, 100%, 40%),
+          hsl(195, 100%, 30%),
+          hsl(195, 100%, 40%));
+      text-shadow: 0px 15px 0px rgb(36, 30, 30);
 
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+
+      animation: shadowDrip 3s infinite alternate ease-in-out;
+
+    }
+
+    @keyframes melt {
+      0% {
+        transform: scaleY(1) translateY(5px);
+      }
+
+      0% {
+        transform: scaleY(1.1) translateY(10px);
+      }
+    }
+
+    @keyframes shadowDrip {
+      0% {
+        text-shadow: 0px 5px 0px rgba(167, 197, 226, 0.993);
+      }
+
+      100% {
+        text-shadow: 0px 20px 30px rgba(255, 255, 255, 0.966),
+          0px 30px 40px rgba(255, 255, 255, 0.822),
+          0px 70px 5px rgba(255, 255, 255, 0.781);
+      }
+
+
+    }
+  </style>
 
   <main id="main" class="grid-container grid-container--home">
     <div class="col-2">
@@ -129,7 +129,8 @@
     </p>
     </div>-->
     <div class="tree">
-      <h3>The Fruitful Tree in the Garden, I stole and hacked, just like an artist.<br> I walked out of the Art Gallary
+      <h3>The Fruitful Tree in the Garden, I stole and hacked, just like an artist.<br> I walked out of the Art
+        Gallary
         of Ontario with this Piece!<br><br> Admire for now. <br>I hope.<br> The Gallary ... They want it back!
       </h3>
       <canvas role="img"
