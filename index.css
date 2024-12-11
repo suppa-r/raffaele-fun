@@ -473,13 +473,13 @@ nav ul ul ul {
 
   .col {
     grid-column: 2;
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
   }
 
   .col p {
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-400);
@@ -489,8 +489,8 @@ nav ul ul ul {
   }
 
   .col p span {
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
     font-family: var(--ff-semibold--italic);
     color: hsl(var(--clr-light));
     font-size: var(--fs-500);
@@ -504,15 +504,15 @@ nav ul ul ul {
     text-wrap: balance;
     text-wrap: pretty;
     text-align: center;
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
     color: hsl(var(--clr-light));
     font-size: var(--fs-500);
   }
 
   .col-1 a {
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-400);
@@ -536,8 +536,8 @@ nav ul ul ul {
   }
 
   .col-2 p {
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-400);
@@ -547,8 +547,8 @@ nav ul ul ul {
   }
 
   .col-2 p span {
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
     text-align: center;
     font-family: var(--ff--semibold--italic);
     color: hsl(var(--clr-light));
@@ -560,14 +560,14 @@ nav ul ul ul {
 
   .tree {
     grid-column: 3;
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
 
   }
 
   .tree h3 {
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
     color: hsl(var(--clr-light));
     font-size: var(--fs-400);
     font-family: var(--ff-light--italic);
@@ -578,8 +578,8 @@ nav ul ul ul {
 
   .canvas {
     width: 130ch;
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
 
   }
 
@@ -590,7 +590,8 @@ nav ul ul ul {
     max-width: 60ch;
     color: var(--clr-white);
     grid-column: 2;
-    margin-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
   }
 }
 
@@ -615,14 +616,14 @@ nav ul ul ul {
 
   .col {
     grid-column: 2;
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
   }
 
   .col p {
 
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-300);
@@ -632,8 +633,8 @@ nav ul ul ul {
   }
 
   .col p span {
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
     font-family: var(--ff-semibold--italic);
     color: hsl(var(--clr-light));
     font-size: var(--fs-500);
@@ -647,30 +648,10 @@ nav ul ul ul {
     text-wrap: balance;
     text-wrap: pretty;
     text-align: center;
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
     color: hsl(var(--clr-light));
     font-size: var(--fs-400);
-  }
-
-  .large-button {
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
-    text-align: center;
-    font-family: var(--ff-light--italic);
-    color: hsl(var(--clr-dark));
-    text-wrap: balance;
-    text-wrap: pretty;
-    background: hsl(var(--clr-white) / .9);
-    position: relative;
-    z-index: 1;
-    display: inline-grid;
-    place-items: center;
-    margin: 4rem;
-    padding: 4rem;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    text-decoration: none;
   }
 
   .large-button::after {
@@ -684,8 +665,8 @@ nav ul ul ul {
 
   .col-1 a {
     grid-column: 3;
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-300);
@@ -696,6 +677,8 @@ nav ul ul ul {
   }
 
   .col-1 a span {
+    margin: 0 auto;
+    padding: 0 auto;
     text-align: center;
     font-family: var(--ff--semibold--italic);
     color: hsl(var(--clr-light));
@@ -704,15 +687,16 @@ nav ul ul ul {
 
 
   .col-2 {
+    margin-top: 3rem;
     grid-column: 2;
-    margin: 1em;
-    padding: 1em;
+    margin: 0 auto;
+    padding: 0 auto;
   }
 
   .col-2 p {
     max-width: 100ch;
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-300);
@@ -722,8 +706,8 @@ nav ul ul ul {
   }
 
   .col-2 p span {
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
     text-align: center;
     font-family: var(--ff--semibold--italic);
     color: hsl(var(--clr-light));
@@ -735,8 +719,8 @@ nav ul ul ul {
 
   .tree {
     grid-column: 3;
-    margin: 1em;
-    padding: 1em;
+    margin: 0 auto;
+    padding: 0 auto;
     max-width: 100ch;
     margin-inline: 0 auto;
     padding-inline: 0 auto;
@@ -744,8 +728,8 @@ nav ul ul ul {
 
   .tree h3 {
     max-width: 100ch;
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-400);
@@ -758,8 +742,8 @@ nav ul ul ul {
 
     max-width: 100ch;
     width: 40%;
-    margin: 1em;
-    padding: 1em;
+    margin: 0 auto;
+    padding: 0 auto;
   }
 
   .col-3 {
@@ -767,7 +751,8 @@ nav ul ul ul {
     max-width: 60ch;
     color: var(--clr-white);
     grid-column: 2;
-    margin-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
   }
 }
 
@@ -784,37 +769,20 @@ nav ul ul ul {
     justify-content: center;
     align-items: center;
     text-align: center;
+    /*margin: 0 auto;
+    padding: 0 auto;*/
 
   }
 
 
   .grid-container--home {
-    padding-bottom: max(6rem, 20vh);
+    /*padding-bottom: max(3rem, 10vh);*/
     align-items: center;
+    /*margin: 0 auto;
+    padding: 0 auto;*/
   }
 
   /**********Mobile Index.html***/
-
-
-  /*.large-button {
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
-    text-align: center;
-    font-family: var(--ff-light-italic);
-    color: hsl(var(--clr-dark));
-    text-wrap: balance;
-    text-wrap: pretty;
-    background: hsl(var(--clr-white) / .9);
-    position: relative;
-    z-index: 1;
-    display: inline-grid;
-    place-items: center;
-    margin: 2rem;
-    padding: 2rem;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    text-decoration: none;
-  }*/
 
   .large-button::after {
     display: none;
@@ -828,10 +796,9 @@ nav ul ul ul {
 
   /**********Mobile Index.html***/
   .col {
-    width: 90ch;
-    margin-bottom: 0;
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 0 auto;
   }
 
   .col img {
@@ -839,9 +806,9 @@ nav ul ul ul {
   }
 
   .col p {
-
-    margin: 0em 3em;
-    padding: 0em 3em;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 0 auto;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-200);
@@ -851,8 +818,6 @@ nav ul ul ul {
   }
 
   .col p span {
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
     font-family: var(--ff-semibold--italic);
     color: hsl(var(--clr-light));
     font-size: var(--fs-300);
@@ -866,20 +831,26 @@ nav ul ul ul {
     text-wrap: balance;
     text-wrap: pretty;
     text-align: center;
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 0 auto;
     color: hsl(var(--clr-light));
     font-size: var(--fs-300);
   }
 
   .col-1 {
-    margin-bottom: 25svh;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    /*margin-bottom: 25svh;*/
   }
 
   .col-1 a {
 
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 0 auto;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-200);
@@ -904,14 +875,16 @@ nav ul ul ul {
     color: hsl(var(--clr-white));
     text-wrap: balance;
     text-align: center;
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
   }
 
   .col-2 p {
-
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 0 auto;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-200);
@@ -921,8 +894,8 @@ nav ul ul ul {
   }
 
   .col p span {
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
     text-align: center;
     font-family: var(--ff--semibold--italic);
     color: hsl(var(--clr-light));
@@ -934,15 +907,18 @@ nav ul ul ul {
 
   .tree {
     grid-column: 3;
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
   }
 
   .tree h3 {
     text-align: center;
     color: var(--clr-light);
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 0 auto;
     color: var(--ff--light);
     font-family: var(--ff--light--italic);
     font-size: var(--fs-500);
@@ -950,8 +926,10 @@ nav ul ul ul {
 
   .canvas {
     grid-column: 3;
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
   }
 
   .col-3 {
@@ -959,9 +937,11 @@ nav ul ul ul {
     max-width: 60ch;
     color: var(--clr-white);
     grid-column: 2;
-    margin-inline: 0 auto;
+    margin: 0 auto;
+    padding: 0 auto;
   }
 }
+
 
 .tab-list {
   --gap: 2rem;
