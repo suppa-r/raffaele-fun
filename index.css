@@ -13,13 +13,13 @@
   --clr-white: 0 0% 100%;
 
   /* font-sizes */
-  --fs-300: clamp(0.8rem, calc(0.85rem + 0.09vw), 0.9rem);
-  --fs-400: clamp(0.9rem, calc(1.1rem + 0.30vw), 0.9rem);
-  --fs-500: clamp(1.2rem, calc(1.08rem + 0.60vw), 1.rem);
-  --fs-600: clamp(1.50rem, calc(1.0rem + 1.0vw), 1.90rem);
-  --fs-700: clamp(1.94rem, calc(1.54rem + 2.03vw), 3.11rem);
-  --fs-800: clamp(2.33rem, calc(1.7rem + 3.15vw), 4.14rem);
-  --fs-900: clamp(2.8rem, calc(1.85rem + 4.74vw), 5.52rem);
+  --fs-300: clamp(0.8rem, calc(0.85rem + 0.09vw), 0.80rem);
+  --fs-400: clamp(0.9rem, calc(0.95rem + 0.30vw), 1.00rem);
+  --fs-500: clamp(1.00rem, calc(1.20rem + 0.60vw), 1.50rem);
+  --fs-600: clamp(1.30rem, calc(1.30rem + 1.00vw), 2.00rem);
+  --fs-700: clamp(1.60rem, calc(1.40rem + 1.50vw), 2.50rem);
+  --fs-800: clamp(2.00rem, calc(1.50rem + 2.00vw), 3.00rem);
+  --fs-900: clamp(2.60rem, calc(1.60rem + 3.00vw), 4.00rem);
 
   /* font-families */
 
@@ -83,17 +83,10 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-/* Set core body defaults */
-body {
-  min-height: 100svh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-/* A elements that don't have a class get default styles 
+/* A elements that don't have a class get default styles*/
 a:not([class]) {
   text-decoration-skip-ink: auto;
-}*/
+}
 
 /* Inherit fonts for inputs and buttons */
 input,
@@ -103,11 +96,11 @@ select {
   font: inherit;
 }
 
-
 /* set up the body */
 body {
-  line-height: 1.3;
   min-height: 100svh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.3;
   display: grid;
   grid-template-rows: min-content 1fr;
   overflow: hidden;
@@ -159,11 +152,10 @@ picture {
   text-align: center;
   display: grid;
   place-items: center;
-  /*padding-inline: 1rem;*/
 }
 
 .grid-container * {
-  max-width: 80ch;
+  max-width: 100ch;
 }
 
 .sr-only {
@@ -194,7 +186,6 @@ picture {
 }
 
 /* colors */
-
 .bg-dark {
   background-color: hsl(var(--clr-dark));
 }
@@ -461,10 +452,11 @@ nav ul ul ul {
 }
 
 
+
 @media only screen and (min-width:50em) {
   .grid-container {
     text-align: center;
-    grid-template-columns: minmax(3rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(3rem, 1fr);
+    grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 45rem)) minmax(1rem, 1fr);
   }
 
   .grid-container--home {
@@ -473,9 +465,11 @@ nav ul ul ul {
   }
 
   .logo {
-    width: 1.0em;
-    margin: 0.3em;
+    width: 3em;
+    margin: 1em;
   }
+
+  /*****Index.html***Desktop****/
 
   .col {
     grid-column: 2;
@@ -484,7 +478,6 @@ nav ul ul ul {
   }
 
   .col p {
-
     margin-inline: 0 auto;
     padding-inline: 0 auto;
     text-align: center;
@@ -517,37 +510,7 @@ nav ul ul ul {
     font-size: var(--fs-500);
   }
 
-  .large-button {
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
-    text-align: center;
-    font-family: var(--ff-light--italic);
-    color: hsl(var(--clr-dark));
-    text-wrap: balance;
-    text-wrap: pretty;
-    background: hsl(var(--clr-white) / .9);
-    position: relative;
-    z-index: 1;
-    display: inline-grid;
-    place-items: center;
-    margin: 4rem;
-    padding: 4rem;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    text-decoration: none;
-  }
-
-  .large-button::after {
-    display: none;
-  }
-
-  .large-button:hover::after,
-  .large-button:focus::after {
-    display: none;
-  }
-
   .col-1 a {
-    grid-column: 3;
     margin-inline: 0 auto;
     padding-inline: 0 auto;
     text-align: center;
@@ -556,30 +519,23 @@ nav ul ul ul {
     color: hsl(var(--clr-dark));
     text-wrap: balance;
     text-wrap: pretty;
-    text-align: center;
   }
 
   .col-1 a span {
     text-align: center;
     font-family: var(--ff--semibold--italic);
     color: hsl(var(--clr-light));
-    font-size: var(--fs-500);
+    font-size: var(--fs-600);
   }
 
+  /*****Intro.html***Desktop****/
 
   .col-2 {
     grid-column: 2;
-    font-family: var(--ff-light--italic);
-    font-size: var(--fs-400);
-    color: hsl(var(--clr-white));
-    text-wrap: balance;
-    text-align: center;
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+
   }
 
   .col-2 p {
-
     margin-inline: 0 auto;
     padding-inline: 0 auto;
     text-align: center;
@@ -606,24 +562,28 @@ nav ul ul ul {
     grid-column: 3;
     margin-inline: 0 auto;
     padding-inline: 0 auto;
+
   }
 
   .tree h3 {
-    font-family: var(--ff-light--italic);
-    text-wrap: balance;
-    text-wrap: pretty;
-    text-align: center;
     margin-inline: 0 auto;
     padding-inline: 0 auto;
     color: hsl(var(--clr-light));
     font-size: var(--fs-400);
+    font-family: var(--ff-light--italic);
+    text-wrap: balance;
+    text-wrap: pretty;
+    text-align: center;
   }
 
   .canvas {
-    grid-column: 3;
+    width: 130ch;
     margin-inline: 0 auto;
     padding-inline: 0 auto;
+
   }
+
+  /******************/
 
   .col-3 {
     text-align: left;
@@ -634,21 +594,24 @@ nav ul ul ul {
   }
 }
 
+/*****Tablet****/
 @media screen and (min-width: 768px) and (max-width: 1080px) {
   .grid-container {
     text-align: center;
-    grid-template-columns: minmax(0.3rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(0.3rem, 1fr);
+    grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(1rem, 1fr);
   }
 
   .grid-container--home {
-    padding-bottom: max(6rem, 20vh);
+    padding-bottom: max(3rem, 10vh);
     align-items: center;
   }
 
   .logo {
-    width: 1.3em;
-    margin: 0.4em;
+    width: 2.3em;
+    margin: 1em;
   }
+
+  /*****Index.html**Tablet****/
 
   .col {
     grid-column: 2;
@@ -808,14 +771,11 @@ nav ul ul ul {
   }
 }
 
-@media screen and (min-width:300px) and (max-width:760px) {
+/*****Mobile****/
+@media screen and (min-width:250px) and (max-width:700px) {
 
   .primary-header {
     display: none;
-  }
-
-  .col img {
-    width: 40%
   }
 
   .grid-container {
@@ -833,7 +793,10 @@ nav ul ul ul {
     align-items: center;
   }
 
-  .large-button {
+  /**********Mobile Index.html***/
+
+
+  /*.large-button {
     margin-inline: 0 auto;
     padding-inline: 0 auto;
     text-align: center;
@@ -851,7 +814,7 @@ nav ul ul ul {
     border-radius: 50%;
     aspect-ratio: 1;
     text-decoration: none;
-  }
+  }*/
 
   .large-button::after {
     display: none;
@@ -862,16 +825,23 @@ nav ul ul ul {
     display: none;
   }
 
+
+  /**********Mobile Index.html***/
   .col {
+    width: 90ch;
     margin-bottom: 0;
-    margin: 0.5em;
-    padding: 0.5em;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
+  }
+
+  .col img {
+    width: 20%
   }
 
   .col p {
 
-    margin-inline: 0 auto;
-    padding-inline: 0 auto;
+    margin: 0em 3em;
+    padding: 0em 3em;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-200);
@@ -885,25 +855,25 @@ nav ul ul ul {
     padding-inline: 0 auto;
     font-family: var(--ff-semibold--italic);
     color: hsl(var(--clr-light));
-    font-size: var(--fs-400);
+    font-size: var(--fs-300);
     text-align: center;
     text-wrap: balance;
     text-wrap: pretty;
   }
 
   .col h3 {
-    font-family: var(--ff-light--italic);
+    font-family: var(--ff--semibold--italic);
     text-wrap: balance;
     text-wrap: pretty;
     text-align: center;
     margin-inline: 0 auto;
     padding-inline: 0 auto;
     color: hsl(var(--clr-light));
-    font-size: var(--fs-400);
+    font-size: var(--fs-300);
   }
 
   .col-1 {
-    margin-bottom: 35svh;
+    margin-bottom: 25svh;
   }
 
   .col-1 a {
@@ -923,10 +893,10 @@ nav ul ul ul {
     text-align: center;
     font-family: var(--ff--semibold--italic);
     color: hsl(var(--clr-light));
-    font-size: var(--fs-700);
+    font-size: var(--fs-600);
   }
 
-
+  /**********Mobile Intro.html***/
   .col-2 {
     grid-column: 2;
     font-family: var(--ff-light--italic);
