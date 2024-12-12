@@ -142,8 +142,8 @@ picture {
 .grid-container {
   position: relative;
   text-align: center;
-  margin: 0 auto;
-  padding: 0 auto;
+  margin-inline: 0 auto;
+  padding-inline: 0 auto;
   display: flex;
   place-items: center;
 }
@@ -330,9 +330,9 @@ picture {
 @media only screen and (min-width:50em) {
   .grid-container {
     display: flex;
-    gap: 0;
-    margin: 0 auto;
-    padding: 0 auto;
+    gap: 7rem;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     background: transparent;
     position: relative;
     text-align: center;
@@ -340,7 +340,7 @@ picture {
   }
 
   .grid-container--home {
-    padding-bottom: max(6rem, 20vh);
+    /*padding-bottom: max(6rem, 20vh);*/
     place-items: center;
   }
 
@@ -350,10 +350,14 @@ picture {
   }
 
   /*****Index.html***Desktop****/
+  .col {
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
+  }
 
   .col p {
-    margin: 0;
-    padding: 0;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     place-items: center;
     text-align: center;
     font-family: var(--ff-light--italic);
@@ -381,9 +385,14 @@ picture {
     font-size: var(--fs-500);
   }
 
+  .col-1 {
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
+  }
+
   .col-1 a {
-    margin: 0 auto;
-    padding: 0 auto;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-400);
@@ -403,8 +412,8 @@ picture {
 
 
   .col-2 p {
-    margin: 0 2em;
-    padding: 0 4em;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-400);
@@ -424,23 +433,20 @@ picture {
   }
 
   .tree {
-    margin: 0 auto;
-    padding: 0 auto;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     text-align: center;
     place-items: start;
   }
 
-  .canvas img {
-    margin: 0 auto;
-    padding: 0 auto;
-    text-align: center;
-    place-items: start;
-
+  .canvas {
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
   }
 
   .tree h3 {
-    margin: 0 auto;
-    padding: 0 auto;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-400);
@@ -464,12 +470,41 @@ picture {
 }
 
 /*****Tablet****/
-@media screen and (min-width: 768px) and (max-width: 1080px) {
+@media screen and (min-width: 700px) and (max-width: 1080px) {
 
-  /*****Index.html***Desktop****/
+  .grid-container {
+    display: flex;
+
+    gap: 1em;
+    margin-inline: 0 1em;
+    padding-inline: 0 5em;
+    background: transparent;
+    position: relative;
+    text-align: center;
+    place-items: start;
+  }
+
+  .grid-container--home {
+    padding-bottom: max(3rem, 10vh);
+    place-items: start;
+  }
+
+  /*****Index.html***tablet****/
+
+
+  .large-button::after {
+    display: none;
+  }
+
+  .large-button:hover::after,
+  .large-button:focus::after {
+    display: none;
+  }
 
   .col p {
-    place-items: center;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
+    place-items: start;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-400);
@@ -497,6 +532,7 @@ picture {
   }
 
   .col-1 a {
+    place-self: start;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-400);
@@ -512,16 +548,18 @@ picture {
     font-size: var(--fs-600);
   }
 
-  /*****Intro.html***Desktop****/
+  /*****Intro.html***Tablet****/
 
   .col-2 {
-    grid-column: 2;
-
+    place-items: center;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
   }
 
   .col-2 p {
-    margin: 0 auto;
-    padding: 0 auto;
+    place-items: center;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-400);
@@ -531,8 +569,9 @@ picture {
   }
 
   .col-2 p span {
-    margin: 0 auto;
-    padding: 0 auto;
+    place-items: center;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     text-align: center;
     font-family: var(--ff--semibold--italic);
     color: hsl(var(--clr-light));
@@ -543,15 +582,15 @@ picture {
   }
 
   .tree {
-    grid-column: 3;
-    margin: 0 auto;
-    padding: 0 auto;
-
+    place-items: center;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
   }
 
   .tree h3 {
-    margin: 0 auto;
-    padding: 0 auto;
+    place-items: center;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     color: hsl(var(--clr-light));
     font-size: var(--fs-400);
     font-family: var(--ff-light--italic);
@@ -561,10 +600,9 @@ picture {
   }
 
   .canvas {
-    width: 130ch;
-    margin: 0 auto;
-    padding: 0 auto;
-
+    place-items: center;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
   }
 
   /******************/
