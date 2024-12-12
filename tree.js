@@ -9,13 +9,13 @@ class Tree {
 		this.S = window.devicePixelRatio;
 		/*this.W = 800;
 		this.H = 800;*/
-		this.W= 800;
-		this.H=800;
+		this.W= 700;
+		this.H=700;
 		this.branches = [];
 		this.darkTheme = false;
 		this.debug = false;
 		this.decaying = false;
-		this.floorY = 685;
+		this.floorY = 700;
 		this.fruit = [];
 		this.gravity = 0.098;
 		this.loopDelay = 500;
@@ -58,7 +58,8 @@ class Tree {
 			angleInc: 20,
 			decaySpeed: 0.0625,
 			diameter: 10,
-			distance: 120,
+			/*distance: 120,*/
+			distance: 70,
 			distanceFade: 0.2,
 			generation: 1,
 			growthSpeed: 0.04,
