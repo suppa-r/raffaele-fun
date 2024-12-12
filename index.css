@@ -476,8 +476,8 @@ picture {
     display: flex;
 
     gap: 1em;
-    margin-inline: 0 1em;
-    padding-inline: 0 5em;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     background: transparent;
     position: relative;
     text-align: center;
@@ -532,7 +532,8 @@ picture {
   }
 
   .col-1 a {
-    place-self: start;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-400);
@@ -659,9 +660,8 @@ picture {
   }
 
   .col p {
-    max-width: fit-content;
-    margin: 0 auto;
-    padding: 0 auto;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-200);
@@ -692,18 +692,16 @@ picture {
   }
 
   .col-1 {
-    max-width: fit-content;
-    margin: 0 auto;
-    padding: 0 auto;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     text-align: center;
     margin-top: 15svh;
   }
 
   .col-1 a {
 
-    max-width: fit-content;
-    margin: 0 auto;
-    padding: 0 auto;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-200);
@@ -722,7 +720,8 @@ picture {
 
   /**********Mobile Intro.html***/
   .col-2 {
-    grid-column: 2;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-200);
     color: hsl(var(--clr-white));
@@ -735,9 +734,8 @@ picture {
   }
 
   .col-2 p {
-    max-width: fit-content;
-    margin: 0 auto;
-    padding: 0 auto;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     text-align: center;
     font-family: var(--ff-light--italic);
     font-size: var(--fs-200);
@@ -747,8 +745,8 @@ picture {
   }
 
   .col p span {
-    margin: 0 auto;
-    padding: 0 auto;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     text-align: center;
     font-family: var(--ff--semibold--italic);
     color: hsl(var(--clr-light));
@@ -759,29 +757,24 @@ picture {
   }
 
   .tree {
-    grid-column: 3;
-    max-width: fit-content;
-    margin: 0 auto;
-    padding: 0 auto;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     text-align: center;
   }
 
   .tree h3 {
     text-align: center;
     color: var(--clr-light);
-    max-width: fit-content;
-    margin: 0 auto;
-    padding: 0 auto;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     color: var(--ff--light);
     font-family: var(--ff--light--italic);
     font-size: var(--fs-500);
   }
 
   .canvas {
-    grid-column: 3;
-    max-width: fit-content;
-    margin: 0 auto;
-    padding: 0 auto;
+    margin-inline: 0 auto;
+    padding-inline: 0 auto;
     text-align: center;
   }
 
