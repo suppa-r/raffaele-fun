@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="index.css" />
+  <title>Raffaele Suppa | Website</title>
+  <script src="index.js" defer></script>
+  <script type="text/javascript" src="app.js" defer></script>
+  <script type="text/javascript" src="tree.js" defer></script>
+</head>
+
+<body class="home">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+      <span class="sr-only" aria-expanded="false">Menu</span>
+    </button>
+    <nav>
+      <!--<ul id="primary-navigation" data-visible="false" class="primary-navigation flex">-->
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+
+        <li> <img src="./images/raf.jpg" alt="raffaele" class="logo"></li>
+
+        <li><a href="index.html"><span aria-hidden="true">01</span>profile</a></li>
+        <li><a href="index.html"><span aria-hidden="true">02</span>architecture</a></li>
+        <li><a href="index.html"><span aria-hidden="true">03</span>photography</a></li>
+        <li><a href="index.html"><span aria-hidden="true">04</span>fun</a></li>
+        <li><a href="index.html"><span aria-hidden="true">05</span>get in touch</a></li>
+      </ul>
+    </nav>
+  </header>
+  <style>
+    .text-layer {
+      position: relative;
+      font-size: 2.5em;
+      font-weight: bold;
+      margin-bottom: 10svh;
+      /*transform: rotateX(-30deg) translateZ(70px);*/
+      transform: rotateX(-30deg) translateZ(70px);
+      background: linear-gradient(109.6deg,
+          /*hsl(195, 100%, 40%) 11.2%,
+          hsl(195, 100%, 40%) 42%,
+          hsl(195, 100%, 40%) 42%,
+          rgb(255, 255, 255) 100.2%);*/
+          hsl(195, 100%, 30%),
+          hsl(195, 100%, 40%),
+          hsl(195, 100%, 30%),
+          hsl(195, 100%, 40%));
+      text-shadow: 0px 15px 0px rgb(36, 30, 30);
+
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+
+      animation: shadowDrip 3s infinite alternate ease-in-out;
+
+    }
+
+    @keyframes melt {
+      0% {
+        transform: scaleY(1) translateY(5px);
+      }
+
+      0% {
+        transform: scaleY(1.1) translateY(10px);
+      }
+    }
+
+    @keyframes shadowDrip {
+      0% {
+        text-shadow: 0px 5px 0px rgba(167, 197, 226, 0.993);
+      }
+
+      100% {
+        text-shadow: 0px 20px 30px rgba(255, 255, 255, 0.966),
+          0px 30px 40px rgba(255, 255, 255, 0.822),
+          0px 70px 5px rgba(255, 255, 255, 0.781);
+      }
+
+
+    }
+  </style>
+  <main id="main" class="grid-container grid-container--home">
+    <div class="col-2">
+
+      <span class="text-layer">h</span>
+      <span class="text-layer">e</span>
+      <span class="text-layer">l</span>
+      <span class="text-layer">l</span>
+      <span class="text-layer">o</span>
+
+      <br><br><br><br><br><br>
+
+      <p>So, I'm going to tell you about<br>
+        <span>Myself</span>
+        <br>
+        Let’s face it------if you want to get to know someone<br> you may as well genuinely go to
+        the source<br> and not hover kind of on the edge.<br> The view there is not so good. <br>I will quarantee you
+        that with all your Money Back!<br><br> Sit back now, and relax
+        because I'll give you a <em>glimpse!</em><br>
+
+        <span>please enjoy the stay!</span>
+      </p>
+
+    </div>
+
+
+
+
+    <!--<br><br>
+
+    Way out in left field my working career began at maybe 11 or 12yrs. old. I'm not that certain.<br>That job
+    lasted only one brief
+    summer, and it paid me $10.00 per week. Paid in rolled quarters! I'm certain of that.<br>I wasn't even at the
+    teenage attitude yet and
+    I was ruling like King of Shit Mountain. Walking taller than
+    ten feet high. I had 10 bucks in my pocket and loudly singing Amazing Grace all the way to my Swiss Bank. Money
+    made me rich. <br> I often
+    reflect
+    if that fast times was like a trauma that caused my immenent and Modern Gypsy Career. And Lifstyle.<br>I
+    present
+    this
+    because, there's an important Irony here. <br>If we're similar, you'll find it funny too!<br> For 99% of my
+    fledged Design Career, my Pay remained steady at $10.00 per week! <br>Paydays became easier though:
+    I wasn't
+    getting paid in quarters. The silver lining, if you choose the positive.
+    <br><br>
+    <span>
+      Starving Artist? No kidding!</span>
+    </p>
+    </div>-->
+    <div class="tree">
+      <h3>the fruitful tree in the garden I hacked<br>
+        and walked out of the art
+        gallary
+        of ontario with!<br><br> admire for now. <br>I hope.<br> the gallary ... they want it back -- the warrant's
+        out!!
+      </h3>
+      <canvas role="img">
+        aria-label="A tree growing until it bears fruit, dropping its fruit, shrinking, and repeating the
+        cycle"></canvas>
+    </div>
+  </main>
+</body>
+
+</html>
