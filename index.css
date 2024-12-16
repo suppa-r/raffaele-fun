@@ -102,10 +102,10 @@ body {
   overflow: clip;
 }
 
-/* A elements that don't have a class get default styles 
+ /*A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
-}*/
+}
 
 /* Make images easier to work with */
 img,
@@ -298,14 +298,31 @@ select {
   transform: scale(1.5);
 }
 
-/* primary-header */
+/***************Desktop**************/
+/***************Desktop**************/
+
+@media (min-width: 45em) {
+  .grid-container {
+    text-align: center;
+    margin: 0 auto;
+    grid-template-columns: minmax(0, 1fr) repeat(2, minmax(0, 40rem)) minmax(0, 1fr);
+  }
+
+  .grid-container--home {
+    /*padding-bottom: max(6rem, 20vh);*/
+    align-items: center;
+    justify-content: center;
+  }
+
+   /* primary-header */
 
 .primary-header {
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items:flex-start;
 }
 
 .primary-navigation {
+  gap: 0.2rem clamp(0.3, 1, 0.7rem);
   /*gap: 0.5rem clamp(1.5rem, 5vw, 3.5rem);*/
   list-style: none;
   padding: 0 auto;
@@ -313,19 +330,15 @@ select {
   background: transparent;
 }
 
-
-
 .primary-navigation a>span {
   font-weight: 700;
   margin-right: 0.1em;
   color: var(--clr-light);
 }
-
 .mobile-nav-toggle {
   display: none;
 }
 
-@media (min-width: 45em) {
 
   .primary-header::after {
     content: '';
@@ -344,15 +357,15 @@ select {
   }
 
   .primary-navigation {
-    margin-block: 0.5em;
+    margin-block:2em 2em;
   }
 
   nav {
+    margin-right: 12rem;
     display: flex;
-    gap: 0.1em;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .logo {
@@ -363,9 +376,9 @@ select {
   }
 
   nav ul li {
-    padding: 0 auto;
+    padding: 0 1em;
     position: relative;
-    width: 20ch;
+    min-width:fit-content;
     /*display: inline-block;*/
     list-style: none;
   }
@@ -376,6 +389,7 @@ select {
     text-decoration: none;
     font-size: 1.3em;
     position: relative;
+    width:fit-content;
   }
 
   nav ul li a span {
@@ -416,22 +430,6 @@ select {
     background-color: hsl(var(--clr-white) / 1);
   }
 }
-
-/***************Desktop**************/
-/***************Desktop**************/
-
-@media (min-width: 45em) {
-  .grid-container {
-    text-align: center;
-    margin: 0 auto;
-    grid-template-columns: minmax(0, 1fr) repeat(2, minmax(0, 40rem)) minmax(0, 1fr);
-  }
-
-  .grid-container--home {
-    /*padding-bottom: max(6rem, 20vh);*/
-    align-items: center;
-    justify-content: center;
-  }
 
   .col {
     text-align: center;
@@ -533,7 +531,7 @@ select {
     justify-content: center;
     margin-right: 4em;
   }
-}
+
 
 /***************Tablet**************/
 /***************Tablet**************/
