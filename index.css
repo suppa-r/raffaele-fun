@@ -10,14 +10,12 @@
   --clr-white: 0 0% 100%;
 
   /* font-sizes */
-  --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
-  --fs-800: 3.5rem;
-  --fs-700: 1.5rem;
-  --fs-600: 1rem;
-  --fs-500: 1rem;
-  --fs-400: 0.9375rem;
-  --fs-300: 1rem;
-  --fs-200: 0.875rem;
+  --fs-800: clamp(5rem, 8vw + 1rem, 9.375rem);
+  --fs-700: 2.7rem;
+  --fs-600: 2rem;
+  --fs-500: 1.6rem;
+  --fs-400: 1.2rem;
+
 
   /* font-families */
 
@@ -166,6 +164,7 @@ select {
 }
 
 h3{
+  color:hsl(var(--clr-light));
   font-size: 1.5rem;
   line-height: 1.3;
 }
