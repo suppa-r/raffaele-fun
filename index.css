@@ -10,11 +10,11 @@
   --clr-white: 0 0% 100%;
 
   /* font-sizes */
-  --fs-800: clamp(5rem, 8vw + 1rem, 9.375rem);
-  --fs-700: 2.7rem;
+  --fs-400: clamp(35cqi, 50cqi + 0.1em, 100cqi);
+  /*--fs-700: 2.7rem;
   --fs-600: 2rem;
   --fs-500: 1.6rem;
-  --fs-400: 1.2rem;
+  --fs-400: 1.2rem;*/
 
 
   /* font-families */
@@ -98,7 +98,6 @@ img{
 /* set up the body */
 body {
   font-family: var(--ff-light-italic);
-  color: var(--clr-white);
   line-height: 1.3;
   min-height: 100svh;
   text-rendering: optimizeSpeed;
@@ -151,52 +150,51 @@ select {
   margin:0 auto;
 }
 
-.grid-container{
+.container{
+
   max-inline-size: 1200px;
-  gap:5rem;
+  container-type: inline-size;
+  gap:6rem;
   margin: 0 auto;
   padding:0 auto;
-  container-type: inline-size;
   text-align: center;
   align-items: center;
   justify-content: center;
- 
 }
 
+
 h3{
+  min-width: 100ch;
   color:hsl(var(--clr-light));
-  font-size: 1.5rem;
+  font-size: 1.5em;
   line-height: 1.3;
 }
 
 .cols{
+  max-inline-size: 1200px;
   display:flex;
-  flex-direction: row;
+  flex-flow: row;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  margin:1rem;
-  gap:1rem;
-
+  padding:0 auto;
+  margin:0 auto;
 }
-
 .col{
-  align-items: center;
-  justify-content: center;
-  padding:0 9em;
-  margin:0 9em;
+  min-width: 120ch;
+  color: hsl( var(--clr-white) );
 }
 
- .col p{
+.col p{
+  min-width: 100ch;
   font-size: var(--fs-400);
-  min-width:50ch;
-  align-items: center;
-  justify-content: center;
-  color:hsl(var(--clr-white));
+  color:hsl(var(--clr-light));
  }
 
- .col span{
-  font-size: var(--fs-500);
+
+
+.col span{
+  min-width: 100ch;
+  font-size: var(--fs-400);
   color:hsl(var(--clr-light));
  }
 
@@ -351,25 +349,25 @@ h3{
 }
 
 @container(inline-size > 300px){
-  .cols{
+  .container{
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(270px, 1fr));
- }
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
 }
 
 @container(inline-size > 600px){
-  .cols{
+  .container{
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
- }
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  }
 }
 
 @container(inline-size > 900px){
-  .cols{
+  .container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(850px, 1fr));
     gap: 5rem;
- }
+  }
 }
 
 /***************Desktop**************/
