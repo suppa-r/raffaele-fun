@@ -227,7 +227,7 @@ main{
 /***********************************/
 
 .large-button {
-  min-width: 40ch;
+
   color:var(--clr-dark);
   background:var(--clr-white);
   position: relative;
@@ -427,7 +427,10 @@ body {
     .wrapper {
      /*max-inline-size: calc(20ch * 2 + 1rem);*/
       display: flex;
-      flex-direction: column;
+      flex-direction: column;}
+      .col p{
+        font-size: 0.5cqi;
+      }
       /*grid-template-columns: repeat(auto-fit, minmax(100px,1fr));*/
     }
-    }
+ 
