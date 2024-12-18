@@ -233,9 +233,10 @@ main{
   position: relative;
   z-index: 1;
   display: inline-grid;
-  margin-inline: 0 auto;
-  padding-inline: 0 auto;
   text-align: center;
+  place-items: center;
+  padding: 0 auto;
+  margin: 0 auto;
   padding: 3rem;
   margin: 5rem;
   border-radius: 50%;
@@ -406,7 +407,7 @@ body {
 
 @container(min-width < 1200px){
 .wrapper {
- /*max-inline-size: calc(20ch * 2 + 1rem);*/
+  inline-size: calc(20ch * 2 + 1rem);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
 }
@@ -414,9 +415,9 @@ body {
 
 @container(max-width < 878px){
   .wrapper {
-   /*max-inline-size: calc(20ch * 2 + 1rem);*/
+    inline-size: calc(20ch * 2 + 1rem);
     display: grid;
-    padding:0 4rem;
+    padding-inline:0 4rem;
     grid-template-columns: repeat(auto-fit, minmax(min(100px,100%), 1fr));
  
   }
