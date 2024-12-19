@@ -206,7 +206,7 @@ main{
 
 .wrapper .col p span {
   color:var(--clr-light);
-  font-size: 2cqi;
+  font-size: 4cqi;
 }
 
 .wrapper > :where(h2,h3,h4) {
