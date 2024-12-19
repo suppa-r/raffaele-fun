@@ -169,6 +169,7 @@ h4 {
   transform: translateY(0);
 }
 
+
 /***Layout**********/
 
 main{
@@ -179,6 +180,7 @@ main{
 .wrapper{
   container-type: inline-size;
   container-name: wrapper;
+  min-height: 100svh;
   display:grid;
   place-items: center;
   gap:5rem;
@@ -206,7 +208,7 @@ main{
 
 .wrapper > .col p span {
   color:var(--clr-light);
-  font-size: clamp(1.50cqi, 1.75cqi + 0.7rem, 8cqi);
+  font-size: clamp(1.80cqi, 2.0cqi + 1rem, 10cqi);
 }
 
 .wrapper .col > :where(h2,h3,h4) {
@@ -230,7 +232,8 @@ main{
 /***********************************/
 
 .large-button {
-  font-size: clamp(1.0cqi, 1.25cqi + 0.65rem, 5cqi);
+  font-family: var(--ff-light-italic);
+  font-size: clamp(1.2cqi, 1.5cqi + 0.75rem, 6cqi);
   color:var(--clr-dark);
   background:var(--clr-white);
   position: relative;
@@ -240,15 +243,15 @@ main{
   place-items: center;
   padding: 0 auto;
   margin: 0 auto;
-  padding: clamp(2cqi, 5cqi + 2rem, 8cqi);
-  margin: clamp(2cqi, 8cqi + 2rem, 10cqi);
+  padding: clamp(3cqi, 6cqi + 2rem, 9cqi);
+  margin: clamp(5cqi, 9cqi + 2rem, 12cqi);
   border-radius: 50%;
   aspect-ratio: 1;
   text-decoration: none;
 }
 
 .large-button span {
-  font-size: clamp(2.3cqi, 5cqi + 1rem, 10cqi);
+  font-size: clamp(2.3cqi, 6cqi + 1rem, 10cqi);
   color:var(--clr-light);
 }
 
@@ -387,7 +390,7 @@ body {
   background-size: cover;
   background-position: bottom center;
 }
-/* home */
+ /*home */
 .home {
   background-image: url(./images/header-mobile.jpg);
 
@@ -408,34 +411,37 @@ body {
   }
 }
 
-@container(min-width < 1200px){
-  .wrapper{
+@container(min-width > 768px){
+ .wrapper{
   container-type:inline-size;
   container-name:wrapper;
   display:grid;
   place-items: center;
   gap:5rem;
-  grid-template-columns: repeat(auto-fit,minmax(min(50ch,100%), 1fr));}
+  grid-template-columns: repeat(auto-fit,minmax(min(50ch,100%), 1fr));
+}
 }
 
-@container(max-width < 890px){
-  .wrapper{
+@container(max-width < 768px){
+ .wrapper{
   container-type:inline-size;
   container-name:wrapper;
   display:grid;
   place-items: center;
-  gap:5rem;
-  grid-template-columns: repeat(auto-fit,minmax(min(33ch,100%), 1fr));}
+  gap:2rem;
+  grid-template-columns: repeat(auto-fit,minmax(min(33ch,100%), 1fr));
+}
   }
 
-  @container(min-width < 400px){
-    .wrapper{
+  @container(max-width < 375px){
+   .wrapper{
     container-type:inline-size;
     container-name:wrapper;
-    display:grid;
+    display:flex;
+    flex-direction: row;
     place-items: center;
-    gap:5rem;
-    grid-template-columns: repeat(auto-fit,minmax(min(30ch,100%), 1fr));
+    gap:0rem;
+    /*grid-template-columns: repeat(auto-fit,minmax(min(30ch,100%), 1fr));*/
     }
   }
  
