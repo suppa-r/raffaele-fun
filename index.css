@@ -191,28 +191,27 @@ main{
   padding-inline: auto;
   width: 100%;
   place-items: center;
-  padding:2cqi;
+  padding:4cqi;
 }
 
 .wrapper > .col p {
   font-family: var(--ff-light-italic);
   color:var(--clr-white);
-  font-size: 2.25cqi;
+  font-size: clamp(1.50cqi, 1.50cqi + 0.75rem, 6cqi);
   text-align: center;
   place-items: center;
   padding: 0.5em;
   margin-inline:auto;
 }
 
-.wrapper .col p span {
+.wrapper > .col p span {
   color:var(--clr-light);
-  font-size: 4cqi;
+  font-size: clamp(1.50cqi, 1.75cqi + 0.7rem, 8cqi);
 }
 
-.wrapper > :where(h2,h3,h4) {
+.wrapper .col > :where(h2,h3,h4) {
   color:var(--clr-light);
-  font-size: clamp(2.0rem, 3cqi + 0.5rem, 3rem);
-  text-align: center;
+  font-size: clamp(1.50cqi, 2.1cqi + 0.6rem, 8cqi);
   text-align: center;
   place-items: center;
   padding-inline:  auto;
@@ -231,7 +230,7 @@ main{
 /***********************************/
 
 .large-button {
-
+  font-size: clamp(1.0cqi, 1.25cqi + 0.65rem, 5cqi);
   color:var(--clr-dark);
   background:var(--clr-white);
   position: relative;
@@ -241,15 +240,15 @@ main{
   place-items: center;
   padding: 0 auto;
   margin: 0 auto;
-  padding: 3rem;
-  margin: 5rem;
+  padding: clamp(2cqi, 5cqi + 2rem, 8cqi);
+  margin: clamp(2cqi, 8cqi + 2rem, 10cqi);
   border-radius: 50%;
   aspect-ratio: 1;
   text-decoration: none;
 }
 
 .large-button span {
-  font-size: 2cqi;
+  font-size: clamp(2.3cqi, 5cqi + 1rem, 10cqi);
   color:var(--clr-light);
 }
 
