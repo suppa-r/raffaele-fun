@@ -390,7 +390,7 @@ body {
   background-size: cover;
   background-position: bottom center;
 }
- /*home */
+ /*home *
 .home {
   background-image: url(./images/header-mobile.jpg);
 
@@ -409,7 +409,7 @@ body {
     background-image: url(./images/header-desktop.jpg);
 
   }
-}
+}*/
 
 @container(min-width > 768px){
  .wrapper{
