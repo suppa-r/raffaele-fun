@@ -33,6 +33,15 @@ body{
  
 }
 
+.icon {
+  width: 2em;
+  height: 2em;
+  vertical-align: -0.125em;
+   color:white;
+}
+
+
+
 .container{
   height: 80vh;
   width: 80vw;
@@ -274,7 +283,7 @@ h2, p { margin-top: 1em }
     }
   }
 }
-* make images easier to work with */
+/* make images easier to work with */
 img,
 picture {
     max-width: 100%;
