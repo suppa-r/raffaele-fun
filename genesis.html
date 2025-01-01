@@ -1,0 +1,158 @@
+git<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="png" sizes="32x32" href="favicon-32x32.png">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css.css">
+ 
+  <style>
+  
+    /*.w3-row-padding img {margin-bottom: 16px}*/
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #000000;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+  <title>Raffaele Suppa | Website</title>
+  <script src="navigation.js" defer></script>
+</head>
+
+<body class="genesis">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+
+ <!-- Icon Bar (Sidebar - hidden on small screens) -->
+ <nav class="w3-sidebar w3-bar-block w3-small w3-black w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="revit.jpg" style="width:100%">
+  <a href="profile.html" class="w3-bar-item w3-button w3-black w3-padding-large w3-hover-white">
+    <i class="fa fa-pencil w3-xxlarge"></i>
+    <p>Profile</p>
+  </a>
+ 
+  <a href="beginnings.html" class="w3-bar-item w3-button w3-black w3-padding-large w3-hover-white">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>Beginnings</p>
+  </a>
+  <a href="ryerson.html" class="w3-bar-item w3-button w3-black w3-padding-large w3-hover-white">
+    <i class="fa fa-university w3-xxlarge"></i>
+    <p>Ryerson</p>
+  </a>
+    <a href="perspective.html" class="w3-bar-item w3-button w3-black w3-padding-large w3-hover-white">
+      <i class="fa fa-camera w3-xxlarge"></i>
+      <p>Fun</p>
+    </a>
+    <a href="revit.html" class="w3-bar-item w3-button w3-black w3-padding-large w3-hover-white">
+      <i class="fa fa-pencil w3-xxlarge"></i>
+      <p>Revit</p>
+    </a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-black w3-padding-large w3-hover-white">
+      <i class="fa fa-phone w3-xxlarge"></i>
+      <p>Contact</p>
+    </a>
+
+    <a href="index.html" class="w3-bar-item w3-button w3-black w3-padding-large w3-hover-white">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>Home</p>
+    </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="profile.html" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="photography.html" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="contact.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+
+
+
+ 
+  <header class="primary-header flex">
+    <div>
+      <img src="logo.svg" alt="logo" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+       
+        <li class="active"><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="profile.html"><span aria-hidden="true">01</span>Profile</a>
+          <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="revit.html"><span aria-hidden="true">02</span>Revit</a>
+            <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="skills.html"><span aria-hidden="true">03</span>Skills</a>
+              <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="perspective.html"><span aria-hidden="true">04</span>Fun</a>
+                <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="architecture.html"><span aria-hidden="true">05</span>Architecture</a>
+                  <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="photography.html"><span aria-hidden="true">06</span>Photos</a>
+                    <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="contact.html"><span aria-hidden="true">07</span>Contact</a>
+                        <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2" href="index.html"><span aria-hidden="true">08</span>Home</a>
+        </ul>
+    </nav>
+  </header>
+
+
+  <main id="main">
+  <section class="intro w3-padding-64">
+   
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Heading</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+     
+    </div>
+  
+    <div class="w3-row">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Heading</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+     
+    </div>
+  
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Heading</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+     
+    </div>
+  </section>
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a class="w3-button w3-black" href="#">1</a>
+        <a class="w3-button w3-hover-black" href="#">2</a>
+        <a class="w3-button w3-hover-black" href="#">3</a>
+        <a class="w3-button w3-hover-black" href="#">4</a>
+        <a class="w3-button w3-hover-black" href="#">5</a>
+        <a class="w3-button w3-hover-black" href="#">»</a>
+      </div>
+    </div>
+  
+    <footer id="myFooter">
+      <div class="w3-container w3-theme-l2 w3-padding-32">
+        <h4>Footer</h4>
+      </div>
+  
+  
+  
+ 
+
+   </main>   
+</body>
+</html>
