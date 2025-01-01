@@ -207,7 +207,7 @@ h3::after {
     content: '';
     display: block;
     height: 2px;
-    width: 7.5rem;
+    width: 13rem;
     background: #4FBEE0;
     margin:1em;
 }
@@ -231,8 +231,9 @@ main{
   container-name:home;
   min-height: 100dvh;
   width:100%;
-
-
+  margin-inline: auto;
+  padding-inline: 0 auto;
+  place-self:center ;
   background: linear-gradient(#000, #000 20px, transparent),
   linear-gradient(transparent, #fff 100%),
   linear-gradient(#fff,
@@ -256,6 +257,16 @@ background: fixed linear-gradient(#000, #000 20px, transparent),
       transparent 40px) #3b3636;
  }
 
+ .welcome{
+ 
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+  place-self:center;
+  padding:8em;
+ }
+
 .front {
    -webkit-transition: 250ms;
    transition: 250ms;
@@ -265,12 +276,7 @@ background: fixed linear-gradient(#000, #000 20px, transparent),
   padding-bottom: 0em;
 }
 
-.back {
-   opacity: 0;
-   position: absolute;
-   left: 0;
-   right: 0;
-   display: -webkit-box;
+.back{
    display: -ms-flexbox;
    display: flex;
    -webkit-box-orient: vertical;
@@ -287,8 +293,8 @@ background: fixed linear-gradient(#000, #000 20px, transparent),
 
 .back .streaming-info {
    margin: 2em;
-   -webkit-columns: 2;
-   columns: 2;
+   /*-webkit-columns: 3;
+   columns: 3;*/
    -webkit-column-rule: 3px solid rgba(255, 255, 255, 0.25);
    column-rule: 3px solid rgba(255, 255, 255, 0.25);
 }
@@ -301,6 +307,7 @@ background: fixed linear-gradient(#000, #000 20px, transparent),
 .back .game-stat span {
    font-size: 1.6rem;
    display: block;
+  
 }
 
 .background {
