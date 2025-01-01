@@ -226,35 +226,35 @@ main{
 
 /**** Home Page ****/
 
-.home{
+.index{
   container-type: inline-size;
   container-name:home;
   min-height: 100dvh;
   width:100%;
-  margin-inline: 0 auto;
-  padding-inline: 0 auto;
+
+
+  background: linear-gradient(#000, #000 20px, transparent),
+  linear-gradient(transparent, #fff 100%),
+  linear-gradient(#fff,
+      #fff 1px,
+      transparent 1px,
+      transparent 40px),
+  repeating-linear-gradient(to right,
+      #fff,
+      #ffff 1px,
+      transparent 40px) #3b3636;
+background: fixed linear-gradient(#000, #000 20px, transparent),
+  fixed linear-gradient(transparent, #fff 100%),
+  fixed linear-gradient(#fff,
+      #fff 1px,
+      transparent 1px,
+      transparent 40px),
+  fixed repeating-linear-gradient(to right,
+      #fff,
+      #ffff,
+      1px,
+      transparent 40px) #3b3636;
  }
-
-.index{
-  container-type: inline-size;
-  container-name: section-index;
-  background-color: hsl(var(--clr-dark));
-  min-height: 100dvh;
-  width: 100%;
- }
-
-.content-home{
-container-type: inline-size;
-container-name:colum-index;
-padding: 5em;
-}
-
-.game {
-   position: relative;
-   width: 17em;
-   cursor: pointer;
-}
-
 
 .front {
    -webkit-transition: 250ms;
